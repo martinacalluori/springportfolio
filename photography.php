@@ -32,13 +32,13 @@
 			<nav>
 
 		        <img src="images/burger.png" alt="hamburger menu" width="50" height="50" class="ham-menu">
-	        	
+
 				<ul id="nav-list" class="visually-hidden">
 					 <li><a href="index.html">Home</a> </li>
 					 <!-- <li><a href="aboutme.html">About Me</a> </li> -->
 					 <li><a href="projects.html">Projects</a> <!-- <li><a href="designs.html"></a>Designs</li> -->
 					 </li>
-					 <li><a href="resume.html">Resume</a></li> 
+					 <li><a href="resume.html">Resume</a></li>
 					<li><a href="contact.html"> Contact</a> </li>
 				</ul>
 
@@ -52,7 +52,7 @@
 
 			<li class="photo">
 				<picture>
-					<?php 
+					<?php
 						$query = "SELECT * FROM pictures";
 						$result = mysqli_query($connection, $query);
 						if (!$result) {
@@ -63,7 +63,7 @@
 							echo '<a href="fullsize.php?id=';
 							echo $row['id'];
 							echo '"> ';
-							echo "<li class='photo'>";
+							echo "<li class='photo'";
 							echo "'>";
 							echo '<img src="';
 							echo $row['filepath'];
@@ -71,11 +71,11 @@
 							echo ' alt="' . $row['alttag'] . '"';
 							echo ' class="' . $row['class'] . '"';
 							echo ' />';
-							echo "</picture>";
 							echo "</li>";
 							echo '</a>';
 						}
 					?>
+
 				</picture>
 
 			</li>

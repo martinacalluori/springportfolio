@@ -1,11 +1,11 @@
 <?php require_once 'includes/config.php'; ?>
 
 <?php
-  if (isset($_GET['id'])) {
-    $id = $_GET['id'];
-  } else {
-    $id = rand(1, 9);
-  }
+	if (isset($_GET['id'])) {
+	$id = $_GET['id'];
+	} else {
+	$id = rand(1, 9);
+	}
 ?>
 
 <!DOCTYPE html>
@@ -40,13 +40,13 @@
 			<nav>
 
 		        <img src="images/burger.png" alt="hamburger menu" width="50" height="50" class="ham-menu">
-	        	
+
 				<ul id="nav-list" class="visually-hidden">
 					 <li><a href="index.html">Home</a> </li>
 					 <!-- <li><a href="aboutme.html">About Me</a> </li> -->
 					 <li><a href="projects.html">Projects</a> <!-- <li><a href="designs.html"></a>Designs</li> -->
 					 </li>
-					 <li><a href="resume.html">Resume</a></li> 
+					 <li><a href="resume.html">Resume</a></li>
 					<li><a href="contact.html"> Contact</a> </li>
 				</ul>
 
@@ -57,28 +57,24 @@
 
 <main>
 
-	
 <?php
-          $query = "SELECT * FROM pictures WHERE id = {$id} LIMIT 1";
-          $result = mysqli_query($connection, $query);
+		$query = "SELECT * FROM pictures WHERE Band ='Pvris' LIMIT 7";
+		$result = mysqli_query($connection, $query);
 
-          while ($row = mysqli_fetch_assoc($result)) {
+		while ($row = mysqli_fetch_assoc($result)) {
 ?>
 
+		<img src=<?php echo $row['filepath'] ?> alt="full size image" class="large">
+		<!-- <h2><?php echo $row['band'] ?> </h2> -->
 
-			<img src=<?php echo $row['filepath'] ?> alt="full size image" class="large">
-          <h2><?php echo $row['band'] ?> </h2>
+		<?php
+			}
+			mysqli_free_result($result);
+			?>
 
-
-        <?php
-          } 
-          mysqli_free_result($result);
-        ?>
-
-
-	<?php
-	mysqli_close($connection);
-	?>
+			<?php
+				mysqli_close($connection);
+			?>
 		<script src="js/scripts.js"></script>
 
 </main>
