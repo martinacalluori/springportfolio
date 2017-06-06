@@ -58,14 +58,14 @@
 <main>
 
 <?php
-		$query = "SELECT * FROM pictures WHERE Band ='Pvris' LIMIT 7";
+		$query = "SELECT * FROM pictures WHERE id ='$id' LIMIT 1"; //Change to 12 when database complete & band = "Pvris"
 		$result = mysqli_query($connection, $query);
 
 		while ($row = mysqli_fetch_assoc($result)) {
 ?>
 
 		<img src=<?php echo $row['filepath'] ?> alt="full size image" class="large">
-		<!-- <h2><?php echo $row['band'] ?> </h2> -->
+		<h2><?php echo $row['band'] ?> </h2> 
 
 		<?php
 			}
