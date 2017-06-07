@@ -1,11 +1,11 @@
 <?php
 $host = $_SERVER['HTTP_HOST'];
-if ($host == 'localhost') {
+if ($host == 'localhost:8888') {
   // Local database credentials
   $dbhost = "localhost";
   $dbuser = "root";
   $dbpass = "root";
-  $dbname = "martipd7_idm232";
+  $dbname = "photos";
 }
 else {
   // Remote database credentials
@@ -23,6 +23,7 @@ if (mysqli_connect_errno()) {
     " (" . mysqli_connect_errno() . ")"
   );
 }
+
 function redirect_to($location)
 {
   header('Location:' .$location);

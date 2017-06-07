@@ -6,6 +6,13 @@
 	} else {
 	$id = rand(1, 9);
 	}
+	if (isset($_GET['band'])) {
+	$band = $_GET['band'];
+	} else {
+	$band = rand(1, 9);
+	}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +46,7 @@
 		<header>
 			<nav>
 
-		        <img src="images/burger.png" alt="hamburger menu" width="50" height="50" class="ham-menu">
+		    <img src="images/burger.png" alt="hamburger menu" width="50" height="50" class="ham-menu">
 
 				<ul id="nav-list" class="visually-hidden">
 					 <li><a href="index.html">Home</a> </li>
@@ -57,24 +64,34 @@
 
 <main>
 
+
+
 <?php
-		$query = "SELECT * FROM pictures WHERE id ='$id' LIMIT 1"; //Change to 12 when database complete & band = "Pvris"
+		$query = "SELECT * FROM pictures WHERE band ='$band'"; //Change to 12 when database complete & band = "Pvris"
 		$result = mysqli_query($connection, $query);
+		echo "<h2>";
+		echo $band;
+		echo "</h2>";
+
 
 		while ($row = mysqli_fetch_assoc($result)) {
 ?>
 
+
+
+
 		<img src=<?php echo $row['filepath'] ?> alt="full size image" class="large">
-		<h2><?php echo $row['band'] ?> </h2> 
+
+
+	<?php
+		}
+		mysqli_free_result($result);
+		?>
 
 		<?php
-			}
-			mysqli_free_result($result);
-			?>
+			mysqli_close($connection);
+		?>
 
-			<?php
-				mysqli_close($connection);
-			?>
 		<script src="js/scripts.js"></script>
 
 </main>

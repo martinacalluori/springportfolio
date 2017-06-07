@@ -53,15 +53,20 @@
 			<li class="photo">
 				<picture>
 					<?php
-						$query = "SELECT * FROM pictures";
+						$query = "SELECT * FROM pictures WHERE home = 1";
 						$result = mysqli_query($connection, $query);
 						if (!$result) {
 							die ("Database query failed");
 						}
 
+						// $bottle = $row['band'];
+
 						while ($row = mysqli_fetch_assoc($result)){
 							echo '<a href="fullsize.php?id=';
 							echo $row['id'];
+							echo '&band=';
+							// echo $row['band'];
+							echo urlencode($row['band']);
 							echo '"> ';
 							echo "<li class='photo'";
 							echo "'>";
@@ -76,6 +81,9 @@
 						}
 					?>
 
+					<!-- // echo urlencode($bottle);
+
+					// urlencode($string); -->
 				</picture>
 
 			</li>
