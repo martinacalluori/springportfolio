@@ -1,52 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Home</title>
+<?php $page_title = "Home";?>
 
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
-	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans|Raleway|Rosario" rel="stylesheet">
-
-  <noscript>
-    <style>
-      .visually-hidden {
-        clip: none;
-        height: auto;
-        display: block !important;
-        width: auto;
-        overflow: auto;
-        position: static;
-      }
-    </style>
-  </noscript>
-
-</head>
-<body>
-
-<div class="header">
-	<div class="row-nav">
-		<header>
-			<nav>
-
-		        <img src="images/burger.png" alt="hamburger menu" width="50" height="50" class="ham-menu">
-	        	
-				<ul id="nav-list" class="visually-hidden">
-					 <li><a href="index.html">Home</a> </li>
-					 <!-- <li><a href="aboutme.html">About Me</a> </li> -->
-					 <li><a href="projects.html">Projects</a> <!-- <li><a href="designs.html"></a>Designs</li> -->
-					 </li>
-					 <li><a href="resume.html">Resume</a></li> 
-					<li><a href="contact.html"> Contact</a> </li>
-				</ul>
-
-			</nav>
-		</header>
-	</div>
-</div>
-
-
+<?php require_once 'includes/config.php'; ?>
+<?php require_once 'includes/header.php'; ?>
 <main>
 
 		<div class="headerimg">
@@ -57,7 +12,7 @@
 	   		 	 <source media="(min-width: 400px)" srcset="images/catfish400.jpg">
 	   		 	 <source media="(min-width: 200px)" srcset="images/catfish200.jpg">
 				 <img id="catfish" src="images/catfish.jpg" alt="Catfish & The Bottlemen">
-				
+
 			</picture>
 		</div>
 
@@ -74,7 +29,7 @@
 	    </div>
 	    <div >
 	    	<p>
-						To know a little about my personal life, I have a dog named Bentley and he has been my best friend for 13 years. I have a mom and a dad, and two great step parents, and between the four of them they raised me. I have two step sisters between my mom and my step dad, they're 25 and 29. Animals are super important to me and a lot of my creativity and inspiration comes from them. Also, I have a lot of plants. I have two cacti, and 9 various types of succulents that I love and care for every day. 
+						To know a little about my personal life, I have a dog named Bentley and he has been my best friend for 13 years. I have a mom and a dad, and two great step parents, and between the four of them they raised me. I have two step sisters between my mom and my step dad, they're 25 and 29. Animals are super important to me and a lot of my creativity and inspiration comes from them. Also, I have a lot of plants. I have two cacti, and 9 various types of succulents that I love and care for every day.
 					</p>
 	    </div>
 	</aside>
@@ -103,7 +58,7 @@
 				<img src="images/bentley.jpg" alt="My dog Bentley">
 			</picture>
 		</div>
-	</aside> 
+	</aside>
 	<script src="js/scripts.js"></script>
 </main>
 </body>

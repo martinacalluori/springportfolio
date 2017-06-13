@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Photography</title>
+	<title><?php echo $page_title; ?></title>
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -29,15 +28,17 @@
 	<div class="row-nav">
 		<header>
 			<nav>
-
-		        <img src="images/burger.png" alt="hamburger menu" width="50" height="50" class="ham-menu">
-
+		      <img src="images/burger.png" alt="hamburger menu" width="50" height="50" class="ham-menu">
 				<ul id="nav-list" class="visually-hidden">
-					 <li><a href="index.html">Home</a> </li>
+					 <li><a href="index.php">Home</a> </li>
 					 <li><a href="photography.php">Photography</a>
 					 </li>
-					 <li><a href="resume.html">Resume</a></li>
-					<li><a href="contact.html"> Contact</a> </li>
+           <li><a href="designs.php">Designs</a></li>
+           <li><a href="videos.php">Videography</a></li>
+					 <li><a href="web.php">Web</a></li>
+					<li><a href="resume.php"> Resume</a> </li>
+          <li><a href="contact.html"> Contact</a> </li>
+
 				</ul>
 
 			</nav>

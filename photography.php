@@ -1,3 +1,5 @@
+<?php $page_title = "Photography";?>
+
 <?php require_once 'includes/config.php'; ?>
 <?php require_once 'includes/header.php'; ?>
 <!-- <!DOCTYPE html>
@@ -67,8 +69,8 @@
 							// echo $row['band'];
 							echo urlencode($row['band']);
 							echo '"> ';
-							echo "<li class='photo'";
-							echo "'>";
+							// echo "<li class='photo'";
+							// echo "'>";
 							echo '<img src="';
 							echo $row['filepath'];
 							echo '"';
@@ -80,9 +82,7 @@
 						}
 					?>
 
-					<!-- // echo urlencode($bottle);
 
-					// urlencode($string); -->
 				</picture>
 
 			</li>
@@ -94,6 +94,8 @@
 	?>
 		<script src="js/scripts.js"></script>
 </main>
+
+<?php require_once 'includes/footer.php'; ?>
 
 </body>
 </html>
