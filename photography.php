@@ -1,6 +1,6 @@
 <?php require_once 'includes/config.php'; ?>
-
-<!DOCTYPE html>
+<?php require_once 'includes/header.php'; ?>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -35,8 +35,7 @@
 
 				<ul id="nav-list" class="visually-hidden">
 					 <li><a href="index.html">Home</a> </li>
-					 <!-- <li><a href="aboutme.html">About Me</a> </li> -->
-					 <li><a href="projects.html">Projects</a> <!-- <li><a href="designs.html"></a>Designs</li> -->
+					 <li><a href="photography.php">Photography</a>
 					 </li>
 					 <li><a href="resume.html">Resume</a></li>
 					<li><a href="contact.html"> Contact</a> </li>
@@ -45,7 +44,7 @@
 			</nav>
 		</header>
 	</div>
-</div>
+</div> -->
 
 <main>
 	 <ul class="photo-container">
