@@ -1,52 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Videography</title>
+<?php $page_title = "Videography";?>
 
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/nav.css">
-	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans|Raleway|Rosario" rel="stylesheet">
-
-  <noscript>
-    <style>
-      .visually-hidden {
-        clip: none;
-        height: auto;
-        display: block !important;
-        width: auto;
-        overflow: auto;
-        position: static;
-      }
-    </style>
-  </noscript>
-
-</head>
-<body>
-
-<div class="header">
-	<div class="row-nav">
-		<header>
-			<nav>
-
-		        <img src="images/burger.png" alt="hamburger menu" width="50" height="50" class="ham-menu">
-	        	
-				<ul id="nav-list" class="visually-hidden">
-					 <li><a href="index.html">Home</a> </li>
-					 <!-- <li><a href="aboutme.html">About Me</a> </li> -->
-					 <li><a href="projects.html">Projects</a> <!-- <li><a href="designs.html"></a>Designs</li> -->
-					 </li>
-					 <li><a href="resume.html">Resume</a></li> 
-					<li><a href="contact.html"> Contact</a> </li>
-				</ul>
-
-			</nav>
-		</header>
-	</div>
-</div>
-
+<?php require_once 'includes/config.php'; ?>
+<?php require_once 'includes/header.php'; ?>
 
 <main>
 
