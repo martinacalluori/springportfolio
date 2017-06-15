@@ -6,10 +6,27 @@
 <main>
 
 <div>
+
+		<div class="video">
+
+
+			<video controls poster="images/cedargreen/cgposter1.png">
+
+				<source src="videos/cg1.mp4" />
+
+				<source src="videos/cg1.webm" type="video/webm" />
+
+				<source src="videos/cg1.theora.ogv" type="video/ogg" />
+
+			</video>
+
+		</div>
+	</div>
+
 	  <div class="video">
 
 
-	    <video width="1080" height="720" controls poster="images/cedargreen/poster1.jpg">
+	    <video controls poster="images/cedargreen/poster1.jpg">
 
 	      <source src="videos/video1.mp4" />
 
@@ -21,10 +38,11 @@
 
 	  </div>
 	</div>
+
 	<div>
 	  <div class="video">
 
-	    <video width="1080" height="720" controls poster="images/cedargreen/poster2.jpg">
+	    <video  controls poster="images/cedargreen/poster2.jpg">
 
 	      <source src="videos/video2.mp4" />
 
@@ -40,7 +58,7 @@
 <div>
 	  <div class="video">
 
-	    <video width="1080" height="720" controls poster="images/cedargreen/poster3.jpg">
+	    <video controls poster="images/cedargreen/poster3.jpg">
 
 	      <source src="videos/video3.mp4" />
 
@@ -52,9 +70,10 @@
 
 	  </div>
 </div>
-	 <div class="video">
 
-	    <video width="1080" height="720" controls poster="images/cedargreen/poster4.jpg">
+	 <!-- <div class="video">
+
+	    <video  controls poster="images/cedargreen/poster4.jpg">
 
 	      <source src="videos/video4.mp4" />
 
@@ -64,7 +83,7 @@
 
 	    </video>
 
-	  </div>
+	  </div> -->
 	  <script src="js/scripts.js"></script>
 </main>
 </body>
