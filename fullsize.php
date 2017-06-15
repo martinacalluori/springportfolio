@@ -45,7 +45,7 @@
 		<?php
 			mysqli_close($connection);
 		?>
-
+<?php require_once 'includes/footer.php'; ?>
 		<script src="js/scripts.js"></script>
 
 </main>

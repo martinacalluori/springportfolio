@@ -56,7 +56,7 @@
 </div>
 
 <div>
-	  <div class="video">
+	  <div id="vidbottom" class="video">
 
 	    <video controls poster="images/cedargreen/poster3.jpg">
 
@@ -84,6 +84,8 @@
 	    </video>
 
 	  </div> -->
+		<?php require_once 'includes/footer.php'; ?>
+
 	  <script src="js/scripts.js"></script>
 </main>
 </body>

@@ -74,30 +74,6 @@ picture {
 
 }
 
-/*.caption {
-  list-style: none;
-  margin: 0;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
-  padding: 0;
-}
-
-.caption a {
-  color: white;
-  display: block;
-  padding: 1em;
-  text-align: center;
-  text-decoration: none;
-
-}*/
-
 .project_nav a:hover {
   background-color: #13070C;
   transition: background-color .3s ease-in-out;
@@ -113,14 +89,6 @@ main {
   background-color: #DDC8C4;
 }
 
-/*figcaption {
-  list-style: none;
-  text-align: center;
-  padding-top: 0.625em;
-  font-family: 'Rosario', sans-serif;
-  font-size: 1.375em;
-  text-decoration: none;
-}*/
 
 .resbod {
   font-size: 1.125em; /* 18/16 */
@@ -255,8 +223,12 @@ input[type=text], textarea {
   display: inline-block;
   width: 67.5em; /* 1080/16 */
   height: 45em; /* 720/16 */
+  padding-bottom: 20px;
 }
 
+#vidbottom {
+  padding-bottom: 50px ;
+}
 video, .contact {
   max-width: 100%;
 }
@@ -347,6 +319,9 @@ footer {
   color: white;
   padding: 10px;
   font-family: 'Raleway', sans-serif;
+  position: fixed;
+ bottom: 0;
+ max-width: 100%;
 
 }
 
