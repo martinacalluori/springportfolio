@@ -36,7 +36,7 @@
            <li><a href="designs.php">Designs</a></li>
            <li><a href="videos.php">Videography</a></li>
 					 <li><a href="web.php">Web</a></li>
-					<li><a href="resume.php"> Resume</a> </li>
+					<!-- <li><a href="resume.php"> Resume</a> </li> -->
           <li><a href="contact.php"> Contact</a> </li>
 
 				</ul>
