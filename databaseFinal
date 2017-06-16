@@ -1,0 +1,126 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.5.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Generation Time: Jun 16, 2017 at 02:22 PM
+-- Server version: 5.6.35
+-- PHP Version: 7.0.15
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `photos`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `designs`
+--
+
+CREATE TABLE `designs` (
+  `id` int(11) NOT NULL,
+  `band` text,
+  `filepath` text,
+  `home` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `designs`
+--
+
+INSERT INTO `designs` (`id`, `band`, `filepath`, `home`) VALUES
+(1, 'Cedar Green', 'images/designs/cg/cg1.jpg', 1),
+(2, 'Cedar Green', 'images/designs/cg/cg2.jpg', 0),
+(3, 'Cedar Green', 'images/designs/cg/cg3.jpg', 0),
+(4, 'Cedar Green', 'images/designs/cg/cg4.jpg', 0),
+(5, 'Cedar Green', 'images/designs/cg/cg5.jpg', 0),
+(6, 'Above the Mendoza', 'images/designs/atm/atm1.jpg', 1),
+(7, 'Above the Mendoza', 'images/designs/atm/atm2.jpg', 0),
+(8, 'Above the Mendoza', 'images/designs/atm/atm3.jpg', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pictures`
+--
+
+CREATE TABLE `pictures` (
+  `id` int(11) NOT NULL,
+  `band` text NOT NULL,
+  `filename` text NOT NULL,
+  `filepath` text NOT NULL,
+  `alttag` text NOT NULL,
+  `home` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `pictures`
+--
+
+INSERT INTO `pictures` (`id`, `band`, `filename`, `filepath`, `alttag`, `home`) VALUES
+(1, 'Pvris', 'pvris-1.jpg', 'images/pvris/pvris-1.jpg', 'Pvris', 1),
+(2, 'Pvris', 'pvris-2.jpg', 'images/pvris/pvris-2.jpg', 'Pvris', 0),
+(3, 'Pvris', 'pvris-3.jpg', 'images/pvris/pvris-3.jpg', 'Pvris', 0),
+(4, 'Pvris', 'pvris-4.jpg', 'images/pvris/pvris-4.jpg', 'Pvris', 0),
+(5, 'Pvris', 'pvris-5.jpg', 'images/pvris/pvris-5.jpg', 'Pvris', 0),
+(6, 'Pvris', 'pvris-6.jpg', 'images/pvris/pvris-6.jpg', 'Pvris', 0),
+(7, 'Pvris', 'pvris-7.jpg', 'images/pvris/pvris-7.jpg', 'Pvris', 0),
+(8, 'Pvris', 'pvris-8.jpg', 'images/pvris/pvris-8.jpg', 'Pvris', 0),
+(9, 'Pvris', 'pvris-9.jpg', 'images/pvris/pvris-9.jpg', 'Pvris', 0),
+(10, 'Pvris', 'pvris-10.jpg', 'images/pvris/pvris-10.jpg', 'Pvris', 0),
+(11, 'Pvris', 'pvris-11.jpg', 'images/pvris/pvris-11.jpg', 'Pvris', 0),
+(12, 'Pvris', 'pvris-12.jpg', 'images/pvris/pvris-12.jpg', 'Pvris', 0),
+(13, 'Catfish & The Bottlemen', 'catfish1.jpg', 'images/catfish/catfish1.jpg', 'Catfish & The Bottlemen', 1),
+(14, 'Catfish & The Bottlemen', 'catfish2.jpg', 'images/catfish/catfish2.jpg', 'Catfish & The Bottlemen', 0),
+(15, 'Catfish & The Bottlemen', 'catfish3.jpg', 'images/catfish/catfish3.jpg', 'Catfish & The Bottlemen', 0),
+(16, 'Catfish & The Bottlemen', 'catfish4.jpg', 'images/catfish/catfish4.jpg', 'Catfish & The Bottlemen', 0),
+(17, 'Catfish & The Bottlemen', 'catfish5.jpg', 'images/catfish/catfish5.jpg', 'Catfish & The Bottlemen', 0),
+(18, 'Catfish & The Bottlemen', 'catfish6.jpg', 'images/catfish/catfish6.jpg', 'Catfish & The Bottlemen', 0),
+(19, 'Catfish & The Bottlemen', 'catfish7.jpg', 'images/catfish/catfish7.jpg', 'Catfish & The Bottlemen', 0),
+(20, 'Catfish & The Bottlemen', 'catfish8.jpg', 'images/catfish/catfish8.jpg', 'Catfish & The Bottlemen', 0),
+(21, 'Catfish & The Bottlemen', 'catfish9.jpg', 'images/catfish/catfish9.jpg', 'Catfish & The Bottlemen', 0),
+(22, 'Catfish & The Bottlemen', 'catfish10.jpg', 'images/catfish/catfish10.jpg', 'Catfish & The Bottlemen', 0),
+(23, 'Catfish & The Bottlemen', 'catfish11.jpg', 'images/catfish/catfish11.jpg', 'Catfish & The Bottlemen', 0),
+(24, 'Knuckle Puck', 'kp1.jpg', 'images/kp/kp1.jpg', 'Knuckle Puck', 1),
+(25, 'Knuckle Puck', 'kp2.jpg', 'images/kp/kp2.jpg', 'Knuckle Puck', 0),
+(26, 'Knuckle Puck', 'kp3.jpg', 'images/kp/kp3.jpg', 'Knuckle Puck', 0),
+(27, 'Knuckle Puck', 'kp4.jpg', 'images/kp/kp4.jpg', 'Knuckle Puck', 0),
+(28, 'Knuckle Puck', 'kp5.jpg', 'images/kp/kp5.jpg', 'Knuckle Puck', 0),
+(29, 'Issues', 'issues1.jpg', 'images/issues/issues1.jpg', 'Issues', 0),
+(30, 'Issues', 'issues2.jpg', 'images/issues/issues2.jpg', 'Issues', 1),
+(31, 'Issues', 'issues3.jpg', 'images/issues/issues3.jpg', 'Issues', 0),
+(32, 'Issues', 'issues4.jpg', 'images/issues/issues4.jpg', 'Issues', 0),
+(33, 'Issues', 'issues5.jpg', 'images/issues/issues5.jpg', 'Issues', 0),
+(34, 'Neck Deep', 'nd1.jpg', 'images/neckdeep/nd1.jpg', 'Neck Deep', 0),
+(35, 'Neck Deep', 'nd2.jpg', 'images/neckdeep/nd2.jpg', 'Neck Deep', 1),
+(36, 'Neck Deep', 'nd3.jpg', 'images/neckdeep/nd3.jpg', 'Neck Deep', 0),
+(37, 'Neck Deep', 'nd4.jpg', 'images/neckdeep/nd4.jpg', 'Neck Deep', 0),
+(38, 'Neck Deep', 'nd5.jpg', 'images/neckdeep/nd5.jpg', 'Neck Deep', 0),
+(39, 'Pierce the Veil', 'ptv1.jpg', 'images/ptv/ptv1.jpg', 'Pierce the Veil', 0),
+(40, 'Pierce the Veil', 'ptv2.jpg', 'images/ptv/ptv2.jpg', 'Pierce the Veil', 0),
+(41, 'Pierce the Veil', 'ptv3.jpg', 'images/ptv/ptv3.jpg', 'Pierce the Veil', 0),
+(42, 'Pierce the Veil', 'ptv4.jpg', 'images/ptv/ptv4.jpg', 'Pierce the Veil', 1),
+(43, 'Pierce the Veil', 'ptv5.jpg', 'images/ptv/ptv5.jpg', 'Pierce the Veil', 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `pictures`
+--
+ALTER TABLE `pictures`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `pictures`
+--
+ALTER TABLE `pictures`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
